@@ -22,7 +22,6 @@ extension UIBezierPath {
                 if index != 0 && lastPoint != firstPoint || lastPoint == nil {
                     currentPath.move(to: element.points[0])
                 }
-                
             case .addLineToPoint:
                 currentPath.addLine(to: element.points[0])
             case .addQuadCurveToPoint:
@@ -40,9 +39,9 @@ extension UIBezierPath {
     }
     
     func firstPoint() -> CGPoint? {
-        var index = -1
         var firstPoint: CGPoint? = nil
         
+        var index = -1
         self.cgPath.applyWithBlock { block in
             index += 1
             let element = block.pointee
@@ -62,9 +61,9 @@ extension UIBezierPath {
     }
     
     func lastPoint() -> CGPoint? {
-        var index = -1
         var lastPoint: CGPoint? = nil
         
+        var index = -1
         self.reversing().cgPath.applyWithBlock { block in
             index += 1
             let element = block.pointee
