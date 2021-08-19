@@ -9,6 +9,9 @@ Please note that when merging, you have to merge them in-order so that, the end 
 
 Example in Swift Playground
 
+<img width="362" alt="Screen Shot 2021-08-19 at 4 03 01 PM" src="https://user-images.githubusercontent.com/18206075/130055376-f1813359-a529-4a44-b440-647c920daf86.png">
+
+
 ```swift
 import UIKit
 import PlaygroundSupport
